@@ -1,0 +1,114 @@
+body, h1, h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #f2f2f2;
+}
+
+#container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#header {
+	background-color: #44aacc;
+	color: #fff;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#loginForm {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	padding-bottom: 12px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+.error-message {
+	color: #ff0000;
+	margin-top: 10px;
+}
+
+#signUpButton {
+	color: #fff;
+	background-color: #007bff;
+	padding: 10px 10px 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#signUpButton:hover {
+	background-color: #0056b3;
+}
+
+#loginButton, #addUser {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#loginButton:hover, #addUser:hover {
+	background-color: #0056b3;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+form {
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,135 @@
+/* CheckOut.css */
+
+/* Reset some default styles to avoid unwanted browser-specific stylings */
+body, h1, h2, h3, p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #f2f2f2; /* Slightly brighter background */
+}
+
+#header {
+	background-color: #44aacc; /* Brighter background for the heading */
+	color: #fff;
+	padding: 10px;
+}
+
+#main {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#main h2 {
+	margin-bottom: 10px;
+}
+
+#cart {
+	flex: 0.5; /* Take left half of the page */
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#cart h2 {
+	margin-bottom: 10px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+th, td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+	text-align: left;
+}
+
+td {
+	text-align: center;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#addressSelection {
+	flex: 0.5;
+	margin-top: 20px;
+}
+
+#address-list, #address-form-container {
+	background-color: #fff;
+	padding: 20px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 20px;
+}
+
+#address-list {
+	display: flex;
+	flex-direction: column;
+}
+
+#address-form-container form table {
+	flex: 0.5;
+}
+
+#address-form-container th, #address-form-container td {
+	padding: 10px;
+}
+
+#address-form-container input[type="text"], #address-form-container select
+	{
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#payment {
+	flex: 0.5;
+}
+
+#payment form {
+	display: flex;
+	flex-direction: column;
+}
+
+#payment form div {
+	margin-bottom: 10px;
+}
+
+#add-new-address, #cancel-new-address, #backbutton, #finalSubmitButton,
+	#add-address, #finalSubmitButton {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #007bff;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	margin-bottom: 10px;
+}
+
+#add-new-address:hover, #cancel-new-address:hover, #backbutton:hover,
+	#finalSubmitButton:hover, #add-address:hover {
+	background-color: #0056b3;
+}

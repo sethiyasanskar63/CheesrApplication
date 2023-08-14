@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cheesr.mapper.CheeseMapper">
+	<select id="getCheeseById" resultType="com.cheesr.model.Cheese">
+		SELECT * FROM CHEESE
+		WHERE
+		id = #{id}
+	</select>
+	<select id="getAllCheese" resultType="com.cheesr.model.Cheese">
+		SELECT * FROM CHEESE
+	</select>
+</mapper>
+
+
+

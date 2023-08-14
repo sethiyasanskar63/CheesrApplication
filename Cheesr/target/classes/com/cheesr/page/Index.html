@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<meta charset="UTF-8">
+<title>Cheesr - The Online Cheese Shop</title>
+<link rel="stylesheet" href="Index.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Welcome to Cheesr - The Online Cheese Shop</h1>
+			<a id="orderButton" href="#" wicket:id="orderButton">Orders</a> <a
+				id="logoutButton" href="#" wicket:id="logoutButton">Log Out</a>
+		</div>
+		<div wicket:id="orderModel"></div>
+		<div id="contents">
+			<div id="main">
+				<h2>Cheese Details</h2>
+				<div class="cheese" wicket:id="cheeses">
+					<h3>
+						<span wicket:id="id">1</span>&nbsp;&nbsp;<span wicket:id="name">Gouda</span>
+					</h3>
+					<p wicket:id="description">Gouda is a Dutch ...</p>
+					<p class="price">
+						Rs <span wicket:id="price">$2.99</span> <a wicket:id="add"
+							href="#">add to cart</a>
+					</p>
+				</div>
+				<div wicket:id="navigator"></div>
+			</div>
+			<div id="cart">
+				<h2>Cart Details</h2>
+				<table>
+					<tr>
+						<th>Cheese</th>
+						<th>Price</th>
+						<th>Action</th>
+						<th>Remove from Cart</th>
+					</tr>
+					<tr wicket:id="cart-row">
+						<td><span wicket:id="cheeseName">Cheese Name</span></td>
+						<td>Rs <span wicket:id="cheesePrice">Cheese Price</span></td>
+						<td><a href="#" wicket:id="decrement"><span
+								wicket:id="label">-</span></a> <span wicket:id="quantity">0</span> <a
+							href="#" wicket:id="increment"><span wicket:id="label">+</span></a>
+						</td>
+						<td><a wicket:id="remove" href="#">remove</a></td>
+					</tr>
+				</table>
+				<h3 class="total-amount">
+					Total Amount: Rs <span wicket:id="totalAmount">0.00</span>
+				</h3>
+				<input type="button" wicket:id="checkout" class="checkout-btn"
+					value="Check Out" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+

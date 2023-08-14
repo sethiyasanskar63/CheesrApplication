@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.apache.org/wicket">
+<head>
+<title>Sign Up Page</title>
+</head>
+<body>
+	<wicket:panel>
+		<form wicket:id="signUpForm">
+			<h2>Sign Up</h2>
+			<label for="username">Username:</label> <input type="text"
+				wicket:id="username" id="username" required="required" /> <br /> <label
+				for="password">Password:</label> <input type="password"
+				wicket:id="password" id="password" required="required" /> <br />
+
+			<button id="addUser" wicket:id="signUpButton">Sign Up</button>
+		</form>
+	</wicket:panel>
+</body>
+</html>

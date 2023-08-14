@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://www.apache.org/wicket">
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="LoginPage.css">
+</head>
+<body>
+	<div id="header">
+		<h1>Welcome to Cheesr - The Online Cheese Shop</h1>
+		<a id="signUpButton" href="#" wicket:id="signUpButton">Sign Up</a>
+	</div>
+
+	<div wicket:id="signupModal"></div>
+	<div id="login">
+
+		<form wicket:id="loginForm">
+			<h2>Log in</h2>
+			<label for="username">Username:</label> <input type="text"
+				wicket:id="username" id="username" required="required" /> <br /> <label
+				for="password">Password:</label> <input type="password"
+				wicket:id="password" id="password" required="required" /> <br />
+
+			<button id="loginButton" wicket:id="loginButton">Login</button>
+		</form>
+	</div>
+</body>
+</html>

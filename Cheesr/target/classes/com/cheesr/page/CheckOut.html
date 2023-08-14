@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<title>CheckOut</title>
+<link rel="stylesheet" href="CheckOut.css">
+<script>
+	function showPaymentCompleteAlert() {
+		alert("Payment Complete");
+	}
+</script>
+</head>
+<body>
+	<div id="header">
+		<h1>Welcome to Cheesr - The Online Cheese Shop</h1>
+		<h2>CheckOut</h2>
+	</div>
+	<div id="main">
+		<div id="cart">
+			<h2>Cart details</h2>
+			<div wicket:id="cheese-list">
+				<table>
+					<tr>
+						<th>Cheese</th>
+						<th>Quantity</th>
+						<th>Price</th>
+					</tr>
+					<tr wicket:id="cheese-row">
+						<td><span wicket:id="cheeseName">Cheese Name</span></td>
+						<td><span wicket:id="quantity">0</span></td>
+						<td>Rs <span wicket:id="cheesePrice">Cheese Price</span></td>
+					</tr>
+				</table>
+
+				<h3>
+					Total Amount:Rs <span wicket:id="totalAmount">0.00</span>
+				</h3>
+			</div>
+		</div>
+		<div id="addressSelection">
+			<h2>Addresses</h2>
+			<div wicket:id="address-list">
+				<wicket:container wicket:id="addressRadioGroup">
+					<wicket:container wicket:id="addressListView">
+						<input type="radio" wicket:id="addressRadio"
+							wicket:path="addressListView[#index].addressRadio" />
+						<span wicket:id="addressLabel"></span>
+						<br />
+					</wicket:container>
+				</wicket:container>
+			</div>
+		</div>
+		<button id="add-new-address" wicket:id="addAddress">Add new
+			address</button>
+		<div id="address-form-container">
+			<form id="addAddressForm" wicket:id="form">
+				<p>Please enter your billing address.</p>
+				<table>
+					<tr>
+						<th>Name</th>
+						<td><input wicket:id="name" type="text" /></td>
+					</tr>
+					<tr>
+						<th>Street</th>
+						<td><input wicket:id="street" type="text" /></td>
+					</tr>
+					<tr>
+						<th>Zip code</th>
+						<td><input wicket:id="zipcode" type="text" /></td>
+					</tr>
+					<tr>
+						<th>City</th>
+						<td><input wicket:id="city" type="text" /></td>
+					</tr>
+					<tr>
+						<th>State</th>
+						<td><select wicket:id="dropdownField"></select></td>
+					</tr>
+					<tr>
+						<th>&nbsp;</th>
+						<td><input id="cancel-new-address" type="button"
+							wicket:id="cancel" value="Cancel" /> <input id="add-address"
+							type="submit" wicket:id="AddAddress" value="Add Address!" /></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div id="payment">
+			<h2>Payment Details</h2>
+			<form wicket:id="creditCardForm">
+				<div>
+					<label for="cardNumber">Card Number:</label> <input type="text"
+						wicket:id="cardNumber" id="cardNumber" required>
+				</div>
+				<div>
+					<label for="cardHolderName">Card Holder Name:</label> <input
+						type="text" wicket:id="cardHolderName" id="cardHolderName"
+						required>
+				</div>
+				<div>
+					<label for="expirationDate">Expiration Date:</label> <input
+						type="text" wicket:id="expirationDate" class="datepicker" />
+
+				</div>
+				<div>
+					<label for="confirmation">Agree to Terms and Conditions</label> <input
+						id="confirmation" type="checkbox" wicket:id="confirmation"
+						required />
+				</div>
+				<div>
+					<input id="backbutton" type="button" wicket:id="cancel"
+						value="Back" />
+					<button id="finalSubmitButton" wicket:id="submitButton"
+						type="submit" onsubmit="showPaymentCompleteAlert()">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
